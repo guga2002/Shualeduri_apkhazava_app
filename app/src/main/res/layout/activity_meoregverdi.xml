@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/giamwvane"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".meoregverdi"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/nacrisferi"
+            android:text="welcome"
+            android:textSize="80px"
+            android:gravity="center"
+
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/nacrisferi"
+            android:id="@+id/placeofname"
+            android:text="here is your name"
+            android:textSize="80px"
+            android:layout_marginTop="25sp"
+
+
+            >
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/placeofsurname"
+            android:background="@color/nacrisferi"
+            android:layout_height="wrap_content"
+            android:text="here is your surname"
+            android:textSize="80px"
+            android:layout_marginTop="25sp"
+
+
+            >
+        </TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:text="back,log out"
+            android:gravity="center"
+            android:layout_marginTop="50sp"
+            android:backgroundTint="@color/gianacrisferi"
+            android:textColor="@color/black"
+            android:fontFamily="monospace"
+            android:textSize="60px"
+            android:id="@+id/logout"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
