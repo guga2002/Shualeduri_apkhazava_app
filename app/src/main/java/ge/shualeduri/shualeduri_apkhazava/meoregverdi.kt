@@ -20,9 +20,9 @@ class meoregverdi : AppCompatActivity() {
         placeofsurname.text=surname
 
         logout.setOnClickListener {
-            val editor:SharedPreferences.Editor=preferences.edit()
-            editor.clear()
-            editor.apply()
+           // val editor:SharedPreferences.Editor=preferences.edit()
+           // editor.clear()
+           // editor.apply()
 
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

@@ -15,72 +15,102 @@
         android:background="@color/giamwvane"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/ragac"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Log In"
-            android:textColor="@color/black"
-            android:textSize="28sp" />
+            android:orientation="horizontal">
 
-        <TextView
+            <TextView
+                android:id="@+id/ragac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Log In"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/buttonofnext"
+                android:layout_width="250px"
+                android:layout_height="100px"
+                android:layout_marginLeft="-270px"
+                android:textSize="50px"
+                android:fontFamily="serif"
+                android:backgroundTint="@color/muqi"
+                android:text="next" />
+        </LinearLayout>
+
+
+
+        <EditText
             android:id="@+id/nameofuser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="180dp"
+            android:fontFamily="sans-serif-smallcaps"
             android:background="@color/nacrisferi"
             android:hint="Enter your name"
             android:inputType="textCapSentences"
             android:textSize="80px" />
 
-        <TextView
+        <EditText
             android:id="@+id/surnameofuser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-smallcaps"
             android:background="@color/nacrisferi"
             android:hint="Enter your surname"
             android:inputType="textCapSentences"
             android:textSize="80px" />
 
-        <CheckBox
-            android:id="@+id/checkboxi"
-            android:layout_width="800px"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="180dp"
-            android:background="@color/nacrisferi"
-            android:fontFamily="serif"
-            android:text="remember me"
-            android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/btn1"
-            android:layout_width="500px"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/muqi"
-            android:gravity="center"
-            android:text="sign in" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <CheckBox
+                android:id="@+id/checkboxi"
+                android:layout_width="800px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="180dp"
+                android:background="@color/nacrisferi"
+                android:fontFamily="sans-serif-condensed"
+                android:text="remember me"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/muqi"
+                android:textSize="50px"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="sign in" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="-605dp"
+            android:layout_marginLeft="80dp"
+            >
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="400px"
             android:layout_height="400px"
-            android:layout_marginLeft="90dp"
-            android:layout_marginTop="-550dp"
             app:srcCompat="@drawable/avatar" />
-
-        <Button
-            android:id="@+id/buttonofnext"
-            android:layout_width="250px"
-            android:layout_height="100px"
-            android:layout_marginLeft="250dp"
-            android:layout_marginTop="-210dp"
-            android:backgroundTint="@color/muqi"
-            android:text="next" />
+        </LinearLayout>
 
     </LinearLayout>
 
